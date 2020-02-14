@@ -64,7 +64,6 @@ if [[ "$tmp" == "y" || "$tmp" == "Y" ]]; then
     echo "> Generating initial .bluestatus and .wifistatus config files... "
     sleep 1
     echo $(blueutil -p) > ~/.bluestatus
-    chmod +x ~/.bluestatus
 
     if [[ $(networksetup -getairportpower en0) =~ "On" ]]; then
         echo 1 > ~/.wifistatus
@@ -72,7 +71,6 @@ if [[ "$tmp" == "y" || "$tmp" == "Y" ]]; then
     else
         echo 0 > ~/.wifistatus
     fi
-    chmod +x ~/.wifistatus
 
     echo "> .bluestatus and .wifistatus are now in home directory! "
 
