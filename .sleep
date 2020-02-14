@@ -1,9 +1,8 @@
 #!/bin/bash
 
 echo $(blueutil -p) > ~/.bluestatus
-bluestatus=$(head -n 1 ~/.bluestatus)
 
-if [[ "$bluestatus" != "0" ]]; then
+if [[ "$(<~/.bluestatus)" != "0" ]]; then
     blueutil -p 0
 fi
 
