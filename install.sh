@@ -63,7 +63,7 @@ if [[ "$tmp" == "y" || "$tmp" == "Y" ]]; then
 
     echo "> Generating initial .bluestatus and .wifistatus config files... "
     sleep 1
-    echo $(blueutil -p) > ~/.bluestatus
+    blueutil -p > ~/.bluestatus
 
     if [[ $(networksetup -getairportpower en0) =~ "On" ]]; then
         echo 1 > ~/.wifistatus
