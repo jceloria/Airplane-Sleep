@@ -43,8 +43,7 @@ if [[ "$tmp" == "y" || "$tmp" == "Y" ]]; then
     echo " > Installing Homebrew packages"
     echo "================================================================================"; sleep 1
     echo
-    brew install blueutil
-    brew install sleepwatcher
+    brew install blueutil sleepwatcher
 
     echo; sleep 2
     echo "================================================================================"
