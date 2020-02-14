@@ -67,7 +67,6 @@ if [[ "$tmp" == "y" || "$tmp" == "Y" ]]; then
 
     if [[ $(networksetup -getairportpower en0) =~ "On" ]]; then
         echo 1 > ~/.wifistatus
-        networksetup -setairportpower airport off
     else
         echo 0 > ~/.wifistatus
     fi
