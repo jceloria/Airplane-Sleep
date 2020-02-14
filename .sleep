@@ -8,8 +8,8 @@ if [[ "$bluestatus" != "0" ]]; then
 fi
 
 if [[ $(networksetup -getairportpower en0) =~ "On" ]]; then
-	echo 1 > ~/.wifistatus
-	networksetup -setairportpower airport off
+    echo 1 > ~/.wifistatus
+    networksetup -setairportpower airport off
 else
-	echo 0 > ~/.wifistatus
+    echo 0 > ~/.wifistatus
 fi
