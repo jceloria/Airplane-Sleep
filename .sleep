@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 echo $(blueutil -p) > ~/.bluestatus
 bluestatus=$(head -n 1 ~/.bluestatus)
