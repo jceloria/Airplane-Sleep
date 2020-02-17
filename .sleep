@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo $(blueutil -p) > ~/.bluestatus
+/usr/local/bin/blueutil -p > ~/.bluestatus
 
 if [[ "$(<~/.bluestatus)" != "0" ]]; then
-    blueutil -p 0
+    /usr/local/bin/blueutil -p 0
 fi
 
 if [[ $(networksetup -getairportpower en0) =~ "On" ]]; then
